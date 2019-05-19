@@ -17,54 +17,84 @@
   </header>
   <section id="section">
     <form class="position">
+        <div class="row margin-row">
+            <h5>DATOS PERSONALES</h5>
+        </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Nombres</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Apellidos</label>
+              <input type="text" class="form-control" id="inputApellido">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Edad</label>
+              <input type="number" class="form-control" id="inputEdad">
+            </div>
+          </div>
+          <div class="row margin-row">
+              <h5>DATOS DE CONTACTO</h5>
+          </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Nombres</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <label for="inputEmail4">Celular</label>
+              <input type="email" class="form-control" id="inputCelular">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Apellidos</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <label for="inputPassword4">Correo</label>
+              <input type="password" class="form-control" id="inputCorreo">
             </div>
           </div>
           <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputCity">Celular</label>
-                <input type="text" class="form-control" id="inputCity">
+                <label for="inputEmail4">LinkedIn</label>
+                <input type="email" class="form-control" id="inputLinkedIn">
               </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">Correo</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">Edad</label>
-                <input type="text" class="form-control" id="inputZip">
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Github</label>
+                <input type="password" class="form-control" id="inputGithub">
               </div>
             </div>
+            <div class="row margin-row">
+                <h5>DATOS LABORALES</h5>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">¿En qué te gustaría participar?</label>
+                  <select id="inputState" class="form-control">
+                      <option selected>Selecciona una opción</option>
+                      <option>Front-end developer</option>
+                      <option>Back-end developer</option>
+                      <option>Full Stack Developer</option>
+                      <option>Analista Funcional</option>
+                      <option>Diseñador Gráfico</option>
+                      <option>UX Designer</option>
+                      <option>Marketing Digital</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <div class="form-check margin-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Disponibilidad para movilizarse
+                    </label>
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Estar dispuesto a trasladarse en caso a que se requiera entrevistas presenciales en las empresas">
+                    ?
+                  </button>
+                </div>
+              </div>
       <div class="form-group">
-        <label for="inputAddress">¿En qué rubro te especializas?</label>
-        <select id="inputState" class="form-control">
-            <option selected>Programación</option>
-            <option>Análisis funcional</option>
-            <option>Diseño Gráfico</option>
-            <option>UX</option>
-            <option>Marketing</option>
-          </select>
-      </div>
-      <div class="form-group">
-          <label for="inputAddress">¿Cuáles son las áreas en las que más te destacas?</label>
-          <input type="text" class="form-control" id="inputAddress">
-      </div>
-      <div class="form-group">
-          <label for="inputAddress">Sobre ti</label>
-          <input type="text" class="form-control" id="inputAddress">
+          <label for="inputAddress">Cuéntanos algo sobre ti</label>
+          <textarea type="text" rows="10" class="form-control" id="inputAddress"></textarea>
         </div>
-        <div class="form-group">
-            <label for="inputAddress">Historia laboral</label>
-            <input type="text" class="form-control" id="inputAddress">
+        <div class="row margin-row">
+            <h6>¡IMPORTANTE!: Enviar CV a contacto@softinperu.com</h6>
         </div>
         <div class="row button-center">
-            <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+            <button type="submit" class="btn btn-primary btn-enviar">Guardar</button>
         </div>
     </form>
   </section>
